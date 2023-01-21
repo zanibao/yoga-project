@@ -9,12 +9,25 @@ body {
 
 .grid {
   display: grid;
+  grid-gap: 64px;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -59,7 +72,7 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  background: #3a3a39;
+  color: #014e84;
   border-radius: 100px;
   padding: 16px 32px;
   margin-top: 32px;
@@ -70,9 +83,59 @@ header a {
   background: white;
 }
 
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #014e84;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #014e84;
+  margin: 0;
+  font-family: "Playfair Display";
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #014E844;
+  opacity: 0.7;
+}
+
+main a {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  padding: 16px 32px;
+  margin-top: 8px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #014e84;
+}
+
 footer {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/yoga-woman-background-5.jpeg");
 
   background-repeat: no-repeat;
@@ -98,6 +161,7 @@ footer p {
 
 footer ul {
   padding: 0;
+  line-height: 1.8;
 }
 
 footer li {
