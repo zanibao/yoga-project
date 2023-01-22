@@ -90,6 +90,37 @@ section.secondary h3 {
   padding: 10px;
 }
 
+section.gallery h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #014e84;
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+
+section.gallery h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #014e84;
+  margin: 0;
+  font-family: "Playfair Display";
+}
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+  margin: 30px 0;
+}
+
+.youtube-embeds {
+  margin: 30px 0;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../images/yoga-woman-background-2.jpeg");
