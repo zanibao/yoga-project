@@ -7,6 +7,10 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -14,20 +18,76 @@ body {
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-body h4,
+h5 {
+  font-family: "Poppins";
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  border-radius: 100px;
+  padding: 16px;
+  margin-top: 8px;
+  display: block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #014e84;
+}
+
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+section.secondary {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/yoga-woman-background-6.jpeg");
+}
+
+section.secondary h2 {
+  background-color: white;
+  opacity: 0.7;
+  padding: 12px;
+}
+
+section.secondary h3 {
+  background-color: white;
+  opacity: 0.9;
+  padding: 10px;
 }
 
 header {
